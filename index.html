@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw-20__Kryvorotenko</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<main>
+    <article class="container">
+        <header class="header">
+            <ul>
+                <li><a href="index.html">slick</a></li>
+                <li><a href="slider-2.html">owl</a></li>
+                <li><a href="swiper.html">swiper</a></li>
+                <li><a href="masonry.html">masonry</a></li>
+                <li><a href="zoom.html">zoom</a></li>
+                <li><a href="fullpage.html">fullpage</a></li>
+            </ul>
+        </header>
+        <div class="your-class">
+            <div class="img"><a href="https://picsum.photos/200/300" data-lightbox="owl">
+                <img src="https://picsum.photos/200/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/201/300" data-lightbox="owl">
+                <img src="https://picsum.photos/201/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/202/300" data-lightbox="owl">
+                <img src="https://picsum.photos/202/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/203/300" data-lightbox="owl">
+                <img src="https://picsum.photos/203/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/204/300" data-lightbox="owl">
+                <img src="https://picsum.photos/204/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/205/300" data-lightbox="owl">
+                <img src="https://picsum.photos/205/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/206/300" data-lightbox="owl">
+                <img src="https://picsum.photos/206/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/207/300" data-lightbox="owl">
+                <img src="https://picsum.photos/207/300" alt="">
+            </a></div>
+            <div class="img"><a href="https://picsum.photos/208/300" data-lightbox="owl">
+                <img src="https://picsum.photos/208/300" alt="">
+            </a></div>
+        </div>
+    </article>
+</main>
+<script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.your-class').slick({
+            dots: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow:'<button class="arrow left">\n' +
+                '            <\n' +
+                '        </button>',
+            nextArrow:' <button class="arrow right">\n' +
+                '            >\n' +
+                '        </button>',
+            adaptiveHeight: true
+        });
+    });
+</script>
+</body>
+</html>

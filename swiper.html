@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw-20__Kryvorotenko</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+          integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<main>
+    <article class="container">
+        <header class="header">
+            <ul>
+                <li><a href="index.html">slick</a></li>
+                <li><a href="slider-2.html">owl</a></li>
+                <li><a href="swiper.html">swiper</a></li>
+                <li><a href="masonry.html">masonry</a></li>
+                <li><a href="zoom.html">zoom</a></li>
+                <li><a href="fullpage.html">fullpage</a></li>
+            </ul>
+        </header>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><a href="https://picsum.photos/201/300" data-lightbox="swiper">
+                    <img src="https://picsum.photos/201/300" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/203/300" data-lightbox="swiper">
+                    <img src="https://picsum.photos/203/300" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/204/300" data-lightbox="swiper">
+                    <img src="https://picsum.photos/204/300" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/202/300" data-lightbox="swiper">
+                    <img src="https://picsum.photos/202/300" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/205/300" data-lightbox="swiper">
+                    <img src="https://picsum.photos/205/300" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/200/301" data-lightbox="swiper">
+                    <img src="https://picsum.photos/200/301" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/200/302" data-lightbox="swiper">
+                    <img src="https://picsum.photos/200/302" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/200/303" data-lightbox="swiper">
+                    <img src="https://picsum.photos/200/303" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/200/304" data-lightbox="swiper">
+                    <img src="https://picsum.photos/200/304" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/200/305" data-lightbox="swiper">
+                    <img src="https://picsum.photos/200/305" alt="">
+                </a></div>
+                <div class="swiper-slide"><a href="https://picsum.photos/200/306" data-lightbox="swiper">
+                    <img src="https://picsum.photos/200/306" alt="">
+                </a></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </article>
+</main>
+<script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 4,
+        spaceBetween: 20,
+        effect: 'coverflow',
+        autoplay: {
+            delay: 2500,
+        },
+    });
+</script>
+</body>
+</html>

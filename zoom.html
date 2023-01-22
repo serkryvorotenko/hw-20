@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hw-20__Kryvorotenko</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<main>
+  <article class="container">
+    <header class="header">
+      <ul>
+        <li><a href="index.html">slick</a></li>
+        <li><a href="slider-2.html">owl</a></li>
+        <li><a href="swiper.html">swiper</a></li>
+        <li><a href="masonry.html">masonry</a></li>
+        <li><a href="zoom.html">zoom</a></li>
+        <li><a href="fullpage.html">fullpage</a></li>
+      </ul>
+    </header>
+    <div id="img-container" style="width: 50%">
+      <img src="https://picsum.photos/1080/1080" />
+    </div>
+  </article>
+</main>
+<script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+<script>
+
+  var options1 = {
+    width: 400,
+    zoomWidth: 500,
+    offset: {vertical: 0, horizontal: 10}
+  };
+
+  // If the width and height of the image are not known or to adjust the image to the container of it
+  var options2 = {
+    fillContainer: true,
+    offset: {vertical: 0, horizontal: 10}
+  };
+
+  new ImageZoom(document.getElementById("img-container"), options2);
+
+</script>
+
+</body>
+</html>

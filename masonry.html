@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hw-20__Kryvorotenko</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<main>
+    <article class="container">
+        <header class="header">
+            <ul>
+                <li><a href="index.html">slick</a></li>
+                <li><a href="slider-2.html">owl</a></li>
+                <li><a href="swiper.html">swiper</a></li>
+                <li><a href="masonry.html">masonry</a></li>
+                <li><a href="zoom.html">zoom</a></li>
+                <li><a href="fullpage.html">fullpage</a></li>
+            </ul>
+        </header>
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item"><img src="https://picsum.photos/221/345" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/243/320" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/264/330" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/252/350" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/215/330" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/260/341" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/270/362" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/290/393" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/250/354" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/230/335" alt=""></div>
+            <div class="grid-item"><img src="https://picsum.photos/245/345" alt=""></div>
+        </div>
+    </article>
+</main>
+<script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js">
+</script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+    // init Masonry
+    var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+    });
+    // layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry();
+    });
+
+</script>
+
+</body>
+</html>
